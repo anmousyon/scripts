@@ -5,4 +5,4 @@ read FileName
 echo "Enter word: " 
 read word
 
-find . -name \*$FileName\* -exec grep -Hni '$word' {} \;
+find . -name *"$FileName"* -exec grep -Hni "$word" {} \;
